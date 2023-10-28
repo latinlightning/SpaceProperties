@@ -1,0 +1,16 @@
+modules:
+  confluence:spacePage:
+    - key: space-properties-space-page-hello-world
+      function: main
+      title: Space Properties
+      route: hello-world
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/ab32f446-aae1-434d-8ecd-a72518b49d48
+permissions:
+  scopes:
+    - read:confluence-user
+    - read:confluence-props
+    - read:confluence-space.summary
